@@ -43,13 +43,6 @@ const Checkout = (props) => {
       city: enteredCityIsValid,
       postal: enteredPostalIsValid,
     });
-
-    props.onConfirm({
-      name: enteredName,
-      street: enteredStreet,
-      city: enteredCity,
-      postal: enteredPostal
-    });
     
     const formIsValid =
       enteredNameIsValid &&
@@ -61,6 +54,12 @@ const Checkout = (props) => {
       return;
     }
 
+    props.onConfirm({
+      name: enteredName,
+      street: enteredStreet,
+      city: enteredCity,
+      postal: enteredPostal
+    });
     
   };
 

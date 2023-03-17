@@ -19,7 +19,7 @@
   text-align: right;
 }
 
-.actions button {
+.actions button, .button {
   font: inherit;
   cursor: pointer;
   background-color: transparent;
@@ -30,7 +30,7 @@
 }
 
 .actions button:hover,
-.actions button:active {
+.actions button:active , .button:active,button:hover  {
   background-color: #5a1a01;
   border-color: #5a1a01;
   color: white;
@@ -40,7 +40,8 @@
   color: #8a2b06;
 }
 
-.actions .button {
+.actions .button, .button {
   background-color: #8a2b06;
   color: white;
 }
+
